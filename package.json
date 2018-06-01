@@ -5,6 +5,7 @@
   "dependencies": {
     "npm": "^6.1.0",
     "react": "^16.4.0",
+    "react-anime": "^2.1.0",
     "react-dom": "^16.4.0",
     "react-gsap-enhancer": "^0.3.0",
     "react-motion": "^0.5.2",

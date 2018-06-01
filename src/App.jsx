@@ -10,7 +10,9 @@ const repos = [
   { name: 'React Move', url: 'react-tools/react-move' },
   { name: 'React Spring', url: 'drcmda/react-spring' },
   { name: 'Popmotion', url: 'Popmotion/popmotion' },
+  { name: 'React-anime', url: 'hyperfuse/react-anime' },
 ];
+
 const App = () => (
   <div className="app">
     <header className="app-header">
