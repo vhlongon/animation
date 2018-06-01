@@ -1,0 +1,28 @@
+.repo {
+  flex-basis: calc(33.33% - 2rem);
+  padding: 1rem;
+}
+
+.repo__name {
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+
+.repo__description {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+
+.repo__url {
+  margin-right: 0.5rem;
+}
+
+.repo__stars {
+  font-size: 0.75rem;
+}
+
+.repo__extraInfo {
+  font-size: 0.75rem;
+}
