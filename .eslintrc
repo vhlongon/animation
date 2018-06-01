@@ -1,0 +1,25 @@
+{
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "prettier", "prettier/react"],
+  "parser": "babel-eslint",
+  "plugins": ["prettier"],
+  "rules": {
+    "react/require-default-props": "off",
+    "prettier/prettier": "error",
+    "react/no-multi-comp": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/anchor-is-valid": ["warn", { "aspects": ["invalidHref"] }]
+  },
+  "overrides": [
+    {
+      "files": ["src/**"],
+      "rules": {
+        "import/prefer-default-export": "off"
+      }
+    }
+  ]
+}
