@@ -3,13 +3,12 @@ const path = require('path');
 const fetch = require('node-fetch');
 
 const repositories = [
-  { name: 'GSAP', url: 'azazdeaz/react-gsap-enhancer' },
-  { name: 'React motion', url: 'chenglou/react-motion' },
-  { name: 'React Transition-group ', url: 'reactjs/react-transition-group' },
-  { name: 'React Move', url: 'react-tools/react-move' },
-  { name: 'React Spring', url: 'drcmda/react-spring' },
-  { name: 'Popmotion', url: 'Popmotion/popmotion' },
-  { name: 'React-anime', url: 'hyperfuse/react-anime' },
+  { name: 'ReactMotion', url: 'chenglou/react-motion' },
+  { name: 'ReactTransitionGroup', url: 'reactjs/react-transition-group' },
+  // { name: 'React Move', url: 'react-tools/react-move' },
+  // { name: 'React Spring', url: 'drcmda/react-spring' },
+  // { name: 'Popmotion', url: 'Popmotion/popmotion' },
+  // { name: 'React-anime', url: 'hyperfuse/react-anime' },
 ];
 
 const getRepoData = async url => {
@@ -25,10 +24,22 @@ const getRepoData = async url => {
 
 const buildDataFile = data => `${JSON.stringify(data)}`;
 
+const getFileExample = file =>
+  fs.readFileSync(file, 'utf8', (err, data) => {
+    if (err) throw err;
+    return data;
+  });
+
 const getData = async repos => {
   try {
     const dirPath = path.join(__dirname, 'src');
-    const reposData = await Promise.all(repos.map(async ({ url }) => getRepoData(url)));
+    const reposData = await Promise.all(
+      repos.map(async ({ name, url }) => ({
+        name,
+        example: getFileExample(`${dirPath}/examples/${name}.jsx`),
+        data: await getRepoData(url),
+      }))
+    );
 
     if (!fs.existsSync(dirPath)) {
       fs.mkdirSync(dirPath);

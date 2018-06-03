@@ -8,7 +8,11 @@ const App = () => (
     <header className="app-header">
       <h1 className="app-title">React animation libs</h1>
     </header>
-    <div className="repos">{reposData.map(data => <Repo {...data} key={data.name} />)}</div>
+    <div className="repos">
+      {reposData.map(({ data, name, example }) => (
+        <Repo {...data} name={name} key={name} example={example} />
+      ))}
+    </div>
   </div>
 );
 
