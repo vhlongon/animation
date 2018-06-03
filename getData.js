@@ -3,7 +3,6 @@ const path = require('path');
 const fetch = require('node-fetch');
 
 const repositories = [
-  { name: 'Velocity-react', url: 'google-fabric/velocity-react' },
   { name: 'GSAP', url: 'azazdeaz/react-gsap-enhancer' },
   { name: 'React motion', url: 'chenglou/react-motion' },
   { name: 'React Transition-group ', url: 'reactjs/react-transition-group' },
