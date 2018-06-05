@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Transition from 'react-transition-group/Transition';
+import { Transition } from 'react-transition-group';
 import ToggleButton from '../ToggleButton';
 
 const duration = 300;
@@ -12,13 +12,13 @@ const defaultStyle = {
 
 const transitionStyles = {
   entering: { maxHeight: 0 },
-  entered: { maxHeight: '3000px' },
+  entered: { maxHeight: '1500px' },
 };
 
 class ReactTransitionGroup extends Component {
   constructor(props) {
     super(props);
-    this.state = { show: props.show || false };
+    this.state = { show: false };
   }
 
   toogleEnterState = () => {

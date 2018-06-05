@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import { Motion } from 'react-motion';
+import { Spring } from 'react-spring';
 import ToggleButton from '../ToggleButton';
 
 const defaultStyle = {
-  maxHeight: 0,
   overflowY: 'hidden',
-  transition: 'max-height 300ms ease-in-out',
 };
 
-class ReactMotion extends Component {
+class componentName extends Component {
   constructor(props) {
     super(props);
     this.state = { show: false };
@@ -26,7 +24,7 @@ class ReactMotion extends Component {
     return (
       <div>
         <ToggleButton onClick={this.toogleEnterState} isToggled={show} />
-        <Motion style={{ h: show ? 1200 : 0 }}>
+        <Spring from={{ h: 0 }} to={{ h: show ? 1200 : 0 }}>
           {({ h }) => (
             <div
               style={{
@@ -37,10 +35,10 @@ class ReactMotion extends Component {
               {this.props.children}
             </div>
           )}
-        </Motion>
+        </Spring>
       </div>
     );
   };
 }
 
-export default ReactMotion;
+export default componentName;
