@@ -14,7 +14,7 @@ class ReactAnime extends Component {
     this.animation = anime({
       duration: 300,
       targets: this.node,
-      maxHeight: '300px',
+      maxHeight: '1500px',
       autoplay: false,
       easing: 'easeInOutBack',
     });

@@ -7,7 +7,7 @@ const defaultStyle = {
 };
 
 const PosedExample = posed.div({
-  open: { maxHeight: '1000px', transition: { duration: 300 } },
+  open: { maxHeight: '1200px', transition: { duration: 300 } },
   closed: { maxHeight: 0, transition: { duration: 300 } },
 });
 
