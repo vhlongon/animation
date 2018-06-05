@@ -2,6 +2,7 @@
   "name": "animation",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://vhlongon.github.io/animation",
   "dependencies": {
     "animejs": "^2.2.0",
     "node-fetch": "^2.1.2",
@@ -21,6 +22,8 @@
     "react-transition-group": "^2.3.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "getData": "node getData.js",
     "start": "npm run getData && react-scripts start",
     "build": "react-scripts build",
@@ -36,6 +39,7 @@
     "eslint-plugin-jsx-a11y": "^5.0.3",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.8.2",
+    "gh-pages": "^1.2.0",
     "prettier": "^1.13.3"
   },
   "prettier": {
