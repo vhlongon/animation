@@ -43,7 +43,6 @@ class Repo extends Component {
 
         {ExampleComponent && (
           <div>
-            <p>Example:</p>
             <ExampleComponent>
               <CodeHighlighter code={this.props.example} />
             </ExampleComponent>

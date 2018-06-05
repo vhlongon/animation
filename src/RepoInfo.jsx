@@ -29,7 +29,7 @@ const RepoInfo = ({
             </a>
           </span>
         )}
-      </span>;
+      </span>
     </dd>
   </div>
 );

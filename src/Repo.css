@@ -6,6 +6,10 @@ dd {
 .repo {
   width: calc(50% - 2rem);
   padding: 1rem;
+  margin: 0.5rem;
+  border: 3px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 2px;
 }
 
 .repo__name {

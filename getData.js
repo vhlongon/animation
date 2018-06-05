@@ -8,7 +8,7 @@ const repositories = [
   { name: 'ReactMove', url: 'react-tools/react-move' },
   { name: 'ReactSpring', url: 'drcmda/react-spring' },
   { name: 'Pose', url: 'Popmotion/popmotion' },
-  // { name: 'React-anime', url: 'hyperfuse/react-anime' },
+  { name: 'ReactAnime', url: 'hyperfuse/react-anime' },
 ];
 
 const getRepoData = async url => {
