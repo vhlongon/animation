@@ -7,7 +7,7 @@ const repositories = [
   { name: 'ReactTransitionGroup', url: 'reactjs/react-transition-group' },
   { name: 'ReactMove', url: 'react-tools/react-move' },
   { name: 'ReactSpring', url: 'drcmda/react-spring' },
-  // { name: 'Popmotion', url: 'Popmotion/popmotion' },
+  { name: 'Pose', url: 'Popmotion/popmotion' },
   // { name: 'React-anime', url: 'hyperfuse/react-anime' },
 ];
 

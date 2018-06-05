@@ -5,6 +5,7 @@
   "dependencies": {
     "node-fetch": "^2.1.2",
     "npm": "^6.1.0",
+    "popmotion": "^8.2.3",
     "react": "^16.4.0",
     "react-addons-transition-group": "^15.6.2",
     "react-anime": "^2.1.0",
@@ -12,6 +13,7 @@
     "react-dom-server": "0.0.5",
     "react-motion": "^0.5.2",
     "react-move": "^2.7.0",
+    "react-pose": "^2.0.0",
     "react-scripts": "1.1.4",
     "react-spring": "^5.3.8",
     "react-syntax-highlighter": "^7.0.4",
