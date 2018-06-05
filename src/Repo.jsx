@@ -38,7 +38,7 @@ class Repo extends Component {
   render = () => {
     const { exampleComponent: ExampleComponent } = this.state;
     return (
-      <div>
+      <div className="repo">
         <RepoInfo {...this.props} />
 
         {ExampleComponent && (

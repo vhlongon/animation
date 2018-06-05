@@ -1,5 +1,10 @@
+dd {
+  margin: 0;
+  -webkit-margin-start: 0;
+}
+
 .repo {
-  flex-basis: calc(33.33% - 2rem);
+  width: calc(50% - 2rem);
   padding: 1rem;
 }
 

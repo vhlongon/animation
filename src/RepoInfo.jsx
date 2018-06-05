@@ -7,7 +7,7 @@ const RepoInfo = ({
   name,
   stargazers_count: starCount,
 }) => (
-  <div className="repo">
+  <div>
     <dt>
       <span className="repo__name">{name}</span>
       <span className="repo__stars" role="img" aria-label="start">
